@@ -1,0 +1,17 @@
+<h3>Update Post</h3>
+  <form class="" action="/editEntry/<%=@blog.id%>" method="post">
+    <p>Title: </p>
+    <input type="text" name="title" value="<%= @blog.title %>">
+    <p>Date: </p>
+    <input type="text" name="date" value="<%= @blog.date %>">
+    <p>Content: </p>
+    <input type="text" name="content" value="<%= @blog.content %>">
+    <br><br>
+    <input type="submit" value="update">
+    <br><br>
+  </form>
+
+  <hr>
+  <form class="" action="/destroy/<%= @blog.id%>" method="post">
+    <button type="submit">DELETE</button>
+  </form>
